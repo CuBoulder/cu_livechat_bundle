@@ -10,3 +10,4 @@ files[] = cu_livechat_bundle.context.inc
 
 bundle_cache_clear = 1
 bundle_context_clear = 1
+bundle_group = 'request_bundles'
