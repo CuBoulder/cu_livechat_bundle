@@ -15,7 +15,7 @@ Feature: LiveChat Integration Feature
       And I press "Save configuration"
     Then I should see "The configuration options have been saved."
 
-  # This scenario uses the config set up in the last scenario.
+  # This scenario uses the LiveChat config set up in the last scenario.
   @testing_frontpage @javascript
   Scenario: The LiveChat code shows up for anonymous users.
     Given I go to "node/1"
