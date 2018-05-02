@@ -20,4 +20,4 @@ Feature: LiveChat Integration Feature
   Scenario: The LiveChat code shows up for anonymous users.
     Given I go to "node/1"
     Then the response should contain "<script type=\"text/javascript\" async=\"\" src=\"http://cdn.livechatinc.com/tracking.js\"></script>"
-      And the response should contain "#livechat-compact-container { display: none !important;}'"
+      And the response should contain "#livechat-compact-container { display: none !important;}"
