@@ -21,3 +21,7 @@ Feature: LiveChat Integration Feature
     Given I go to "node/1"
     Then the response should contain "<script type=\"text/javascript\" async=\"\" src=\"http://cdn.livechatinc.com/tracking.js\"></script>"
       And the response should contain "#livechat-compact-container { display: none !important;}"
+
+Scenario: An anonymous user should not be able to access the form for adding a class note
+    When I am on "admin/settings/livechat/configuration"
+    Then I should see "Access denied"
